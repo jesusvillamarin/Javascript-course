@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+header h1{
+    
+    font-family: 'Shrikhand', cursive;
+    background: -webkit-linear-gradient(#0a4eceab,#0fb8ce,#02ec3c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align:right;
+    font-size: 3em;
+}
+footer p{
+    text-align: center;
+    position: relative;
+
+}
+p i{
+    color:red;
+}
