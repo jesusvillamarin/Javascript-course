@@ -17,3 +17,9 @@ footer p{
 p i{
     color:red;
 }
+#one h2{
+    text-align: center;
+    font-weight: bold;
+    color: #0fb8ce;
+    text-shadow: 2px 2px rgb(55, 161, 156);
+}

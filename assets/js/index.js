@@ -13,13 +13,19 @@ $(document).ready(function(){
     
     base = prompt('Introuzca la base');
     altura = prompt('Introduzca la altura');
-    console.log(`El área del triangulo con base ${base} y altura ${altura} es: ${areaTriangulo(base,altura)}`);
+    console.log(`El área del triangulo con base ${base} y altura ${altura} es: ${areaTrian(base,altura)}`);
 
     /*$('#cold').click(()=>{
         $('#cold').toggle(1000);
         $('#hot').toggle(1000);
     });*/
 });
+
+let areaTrian = (base,altura) => base*altura/2;
+
+let areaTrin = function(base,altura){
+    return base*altura/2;
+}
 
 function areaTriangulo(base, altura){
     
