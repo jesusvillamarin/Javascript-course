@@ -11,7 +11,6 @@ header h1{
 }
 footer p{
     text-align: center;
-    position: relative;
 
 }
 p i{
@@ -20,6 +19,21 @@ p i{
 #one h2{
     text-align: center;
     font-weight: bold;
-    color: #0fb8ce;
-    text-shadow: 2px 2px rgb(55, 161, 156);
+    color: #fff;
+    text-shadow: 1px 1px 7px rgb(43, 46, 46);
+}
+#one {
+    font-size: 1.5em;
+    text-align: justify;
+}
+#two{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.col{
+    display: flex;
+}
+.col div{
+    flex: 1;
 }
