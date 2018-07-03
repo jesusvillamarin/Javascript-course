@@ -106,3 +106,30 @@ let reverse = (palabra) => {
 
 platzom('sometemos');
 
+
+/* ======================================================== 
+==         VIDEO Nro. 5 y 4                              ==
+==                                                       ==
+== ========================================================*/
+ const nombre = "Monique";
+const dias = [
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sábado",
+    "Domingo"
+];
+
+//
+function correr(){
+    const min = 5 ;
+    const max = 10;
+    return Math.floor(Math.random() * (max-min)) + min;
+}
+console.log(correr());
+
+for (let i = 0; i < dias.length; i++) {
+    console.log(`El día ${i+1} es el ${dias[i]}`);
+}
