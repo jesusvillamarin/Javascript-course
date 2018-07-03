@@ -16,19 +16,26 @@ footer p{
 p i{
     color:red;
 }
-#one h2{
+article h2{
     text-align: center;
     font-weight: bold;
-    color: #fff;
-    text-shadow: 1px 1px 7px rgb(43, 46, 46);
+    color: #ffffff;
+    text-shadow: 1px 1px 7px #4c4f54;
+    text-align: center;
 }
 #one {
     font-size: 1.5em;
-    text-align: justify;
+   
 }
 #two{
     font-size: 1.5em;
     text-align: justify;
+}
+#one, #two{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px dashed #18a5cf;
 }
 
 .col{
@@ -36,4 +43,11 @@ p i{
 }
 .col div{
     flex: 1;
+}
+
+#art1, #art2, #art3{
+    display: inline-block;
+    list-style: none;
+    border: 3px dashed #02ec3c;
+    padding: 8px;
 }
