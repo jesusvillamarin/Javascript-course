@@ -107,10 +107,14 @@ let reverse = (palabra) => {
 platzom('sometemos');
 
 
-/* ======================================================== 
-==         VIDEO Nro. 5 y 4                              ==
-==                                                       ==
-== ========================================================*/
+/* ==================================================================================
+==         VIDEO Nro. 4 y 5                                                        ==
+==        Math.floor(3.9) //rendondea hacia abajo 3.9 = 3 (Valor mas bajo posible) ==
+==        Math.ceil(3.1) //redondea para arriba 3.1 = 4 (Valor mas alto posible)   ==
+==        Math.round(3.1) // redondea al entero mas cercano 3.1 = 3, 3.5 = 4       ==
+==       Math.pow(4,3) // Elevar un número a x potencia                            ==
+==       .toFixed(2) // Devuelve n decimales despues de la (,) 10.34050 = 10.34    ==
+== =================================================================================*/
  const nombre = "Monique";
 const dias = [
     "Lunes",
@@ -126,10 +130,17 @@ const dias = [
 function correr(){
     const min = 5 ;
     const max = 10;
-    return Math.floor(Math.random() * (max-min)) + min;
+    return Math.round(Math.random() * (max-min)) + min;
 }
-console.log(correr());
+
+let totalkms=0;
+
 
 for (let i = 0; i < dias.length; i++) {
-    console.log(`El día ${i+1} es el ${dias[i]}`);
+    const kms = correr();
+    totalkms += kms;
+    console.log(`El día ${dias[i]}, ${nombre} corrio ${kms} kms`);
+
 }
+
+console.log(`${nombre} corrio en la semana un total de ${totalkms}kms, en promedio corre ${Math.round(totalkms/dias.length)}`);
