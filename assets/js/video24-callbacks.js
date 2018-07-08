@@ -53,33 +53,7 @@ getPersona(`${API_URL}`, function response(err, res) {
         luke.homeworld = res;
         console.log(`El tipo se llama ${luke.name} y vive en ${luke.homeworld.name}`);
     })
-
 });
 
 // Existen callbacks de callbacks de callbacks, y son conocidos tambien como callbacks hell
 // Y esto se resuelve con Promesos
-
-// Las promesas son básicamente objetos y pueden estar en 3 estados
-// Estan asociados a una tarea asincronica
-//     --> Estado 1. Pending  --- estara asociada a una tarea asincronica
-//     --> Estado 1. Fullfield --- se completo exitosamente
-//     --> Estado 1. Rejected  --- Se produjo un error y no se pudo completar 
-
-
-// como funcionan las promesas?
-// En el constructor se le pasa una función con dos parametros 
-// * Resolve 
-// * Reject
-
-const promise = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-        reject(new Error('Se produjo un error'));
-    }, 1000);
-});
-
-promise.then(function () {
-    console.log("Todo OK");
-}).catch(function (err) {
-    console.log("Surgio un error", err);
-})
-
